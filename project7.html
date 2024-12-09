@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Athena Coding Club new members form
+    </title>
+
+    <style>
+       
+        body {
+            background-color:   black;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        h1{
+            color: white;
+        }
+
+        
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+
+        button {
+            color: white;
+            background-color: black;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Шинэ гишүүдийн бүртгэл</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Овог нэр
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Нас
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label>
+                Хүйс
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="recommed">Эр
+                  </input>
+                  <input type="radio" id="recommed-2" 
+                       name="recommed">Эм
+                  </input>
+            </label>
+         
+        
+        </div>
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Утасны дугаар
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your phone number" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Цахим шуудан
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email" />
+        </div>
+
+        
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Хөтөлбөр сонголт
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="engineer">Системийн инженер</option>
+                <option value="design">Системийн дизайнер</option>
+                <option value="data">Мэдээллийн шинжээч</option>
+                <option value="ai">Хиймэл оюун ухаан хөгжүүлэгч</option>
+                <option value="game">Тоглоом хөгжүүлэгч</option>
+                <option value="game">Гар утасны апп хөгжүүлэгч</option>
+            </select>
+            
+        </div>
+
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Анги сонголт
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="engineer">Өглөө анги</option>
+                <option value="design">Орой анги</option>
+                
+            </select>
+            
+        </div>
+
+        <div class="form-control">
+            <label>
+                Та  МТ -ийн чиглэлээр цаашдаа ажиллах сонирхолтой юу?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" 
+                       name="recommed">Тийм
+                  </input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" 
+                       name="recommed">Үгүй
+                  </input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" 
+                       name="recommed">Магадгүй
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Та аль програмийн хэлийг илүү суралцахыг хүсэж байгаа вэ?
+                <small>(1 -ээс илүүг сонгож болно)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Flutter
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Php
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Та алийг нь хийхийг хүсэж байна вэ? <br>
+                <small>(1 -ээс илүүг сонгож болно)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Гар утасны апп
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Тоглоом
+                  </input>
+            </label>
+            
+            
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Та манай сургалтын талаар хаанаас мэдээлэл олж авсан бэ?
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" 
+                      placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Асуух асуулт байвал бичнэ үү?
+            </label>
+
+            <!-- multi-line text input control -->
+         
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Бүртгэх
+        </button>
+    </form>
+</body>
+
+</html>
